@@ -425,6 +425,7 @@
     
     //Previous button
     IQBarButtonItem *prev = [[IQBarButtonItem alloc] initWithImage:imageLeftArrow style:UIBarButtonItemStylePlain target:target action:previousAction];
+    prev.accessibilityLabel = @"Önceki";
     [items addObject:prev];
 
     //Fixed space
@@ -434,6 +435,7 @@
     
     //Next button
     IQBarButtonItem *next = [[IQBarButtonItem alloc] initWithImage:imageRightArrow style:UIBarButtonItemStylePlain target:target action:nextAction];
+    next.accessibilityLabel = @"Sonraki";
     [items addObject:next];
 
     //Flexible space
@@ -448,6 +450,7 @@
     
     //Done button
     IQBarButtonItem *doneButton =[[IQBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:target action:doneAction];
+    doneButton.accessibilityLabel = @"Tamam";
 	[items addObject:doneButton];
 	
     //  Adding button to toolBar.
@@ -507,6 +510,7 @@
     
     //Previous button
     IQBarButtonItem *prev = [[IQBarButtonItem alloc] initWithImage:imageLeftArrow style:UIBarButtonItemStylePlain target:target action:previousAction];
+    prev.accessibilityLabel = @"Önceki";
     [items addObject:prev];
     
     //Fixed space
@@ -516,6 +520,7 @@
     
     //Next button
     IQBarButtonItem *next = [[IQBarButtonItem alloc] initWithImage:imageRightArrow style:UIBarButtonItemStylePlain target:target action:nextAction];
+    next.accessibilityLabel = @"Sonraki";
     [items addObject:next];
     
     //Flexible space
@@ -530,6 +535,7 @@
     
     //Right button
     IQBarButtonItem *doneButton = [[IQBarButtonItem alloc] initWithImage:rightButtonImage style:UIBarButtonItemStyleDone target:target action:rightButtonAction];
+    doneButton.accessibilityLabel = @"Tamam";
     [items addObject:doneButton];
     
     //  Adding button to toolBar.
@@ -584,6 +590,7 @@
     
     //Previous button
     IQBarButtonItem *prev = [[IQBarButtonItem alloc] initWithImage:imageLeftArrow style:UIBarButtonItemStylePlain target:target action:previousAction];
+    prev.accessibilityLabel = @"Önceki";
     [items addObject:prev];
     
     //Fixed space
@@ -593,6 +600,7 @@
     
     //Next button
     IQBarButtonItem *next = [[IQBarButtonItem alloc] initWithImage:imageRightArrow style:UIBarButtonItemStylePlain target:target action:nextAction];
+    next.accessibilityLabel = @"Sonraki";
     [items addObject:next];
     
     //Flexible space
@@ -607,6 +615,7 @@
     
     //Right button
     IQBarButtonItem *doneButton =[[IQBarButtonItem alloc] initWithTitle:rightButtonTitle style:UIBarButtonItemStyleDone target:target action:rightButtonAction];
+    doneButton.accessibilityLabel = @"Tamam";
     [items addObject:doneButton];
     
     //  Adding button to toolBar.
